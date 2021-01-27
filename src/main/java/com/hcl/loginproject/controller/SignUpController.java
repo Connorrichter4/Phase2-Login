@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.hcl.loginproject.model.UserEntity;
-import com.hcl.loginproject.model.UserEntityCrudRepository;
 import com.hcl.loginproject.service.SignupService;
 
 @Controller
@@ -27,7 +26,7 @@ public class SignUpController {
 	public String postSignUp(Model model, @ModelAttribute("user") UserEntity user) {
 		
 		if(user != null && user.getName() != "" && user.getPassword() != "") {
-			if(service.addUser(user)) {				
+			if(service.createUser(user)) {				
 				model.addAttribute("name", user.getName());
 				return "welcome";
 			}else {

@@ -8,6 +8,7 @@
 </head>
 <body>
 	<h1>Welcome</h1>
-	<h2>${name}</h2>
+	<h2>${user.name}</h2>
+	<h2>${user.password}</h2>
 </body>
 </html>

@@ -12,7 +12,7 @@ public class SignupService {
 	@Autowired
 	UserEntityCrudRepository userEntityCrudRepository;
 	
-	public boolean addUser(UserEntity user) {
+	public boolean createUser(UserEntity user) {
 		// Checking to see if a user with the same name already exists
 		if(checkIfUserExists(user)) {
 			userEntityCrudRepository.save(user);
