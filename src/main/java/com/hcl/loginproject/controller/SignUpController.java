@@ -25,8 +25,7 @@ public class SignUpController {
 	
 	@RequestMapping(value="/signup", method = RequestMethod.POST)
 	public String postSignUp(Model model, @ModelAttribute("user") UserEntity user) {
-		System.out.println(user.getName());
-		System.out.println(user.getPassword());
+		
 //		https://www.onlinetutorialspoint.com/spring-boot/spring-boot-mvc-example-tutorials.html
 		if(user != null && user.getName() != null && user.getPassword() != null) {
 			service.addUser(user);

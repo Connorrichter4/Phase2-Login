@@ -7,7 +7,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Table (name="my_product")
+@Table (name="users")
 @Entity
 public class UserEntity {
 	
