@@ -92,7 +92,7 @@ h1 {
 						<div class="d-flex justify-content-center mt-3 login_container">
 							<input type="submit" value="Sign Up" class="btn login_btn" >
 						</div>
-						
+						<div class="d-flex justify-content-center" style="color: red">${error}</div>
 					</form>
 				</div>
 

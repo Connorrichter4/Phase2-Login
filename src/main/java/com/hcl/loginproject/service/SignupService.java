@@ -12,10 +12,25 @@ public class SignupService {
 	@Autowired
 	UserEntityCrudRepository userEntityCrudRepository;
 	
-	public void addUser(UserEntity user) {
-		System.out.println(user.getName());
-		System.out.println(user.getPassword());
-		userEntityCrudRepository.save(user);
+	public boolean addUser(UserEntity user) {
+		// Checking to see if a user with the same name already exists
+		if(checkIfUserExists(user)) {
+			userEntityCrudRepository.save(user);
+			return true;
+		} else {			
+			return false;
+		}
+	}
+	
+	private boolean checkIfUserExists(UserEntity user) {
+		Iterable<UserEntity> allUsers = userEntityCrudRepository.findAll();
+		
+		for (UserEntity userEntity : allUsers) {
+			if(userEntity.getName().equals(user.getName())) {
+				return false;
+			}
+		}
+		return true;
 	}
 	
 }
