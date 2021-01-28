@@ -20,6 +20,8 @@
 
 ### Flowchart
 
+![flowchart](https://user-images.githubusercontent.com/58124052/106207984-3f470e80-6188-11eb-9296-145df835a55c.png)
+
 ### Sprints
 
 #### Sprint 1:
