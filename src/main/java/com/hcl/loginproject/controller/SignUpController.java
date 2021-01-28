@@ -27,7 +27,6 @@ public class SignUpController {
 		
 		if(user != null && user.getName() != "" && user.getPassword() != "") {
 			if(service.createUser(user)) {				
-				model.addAttribute("name", user.getName());
 				return "welcome";
 			}else {
 				model.addAttribute("error", "Username taken!");

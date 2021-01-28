@@ -54,6 +54,6 @@ body, html {
 	outline: 0px !important;
 }
 
-h1 {
+h1, h3 {
 	text-align: center;
 }
