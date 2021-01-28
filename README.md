@@ -20,34 +20,25 @@
 
 ### Flowchart
 
-![Flowchart](https://user-images.githubusercontent.com/58124052/104653073-aab8b880-567f-11eb-8876-fb503ce1c90e.png)
-
 ### Sprints
 
 #### Sprint 1:
 
 - Build welcome screen
-- Add app name and developer details
-- Show main menu
-- Add option to display all files in ascending order
-- Implement display function
-- Add option to close the application
-- Implement closing function
+- Show option to sign up or login
+- Build sign up form
+- Implement function to create a new user
 
 #### Sprint 2:
 
-- Show option to display all file operations
-- Show file operations menu
-- Add option to add files
-- Implement add file function
-- Add option to return to main menu
+- Build login form
+- Implement function to login a user
+- Build success screen
 
 #### Sprint 3:
 
-- Add option to delete files
-- Implement delete function
-- Add option to search for file
-- Implement option to search for file using regex
+- Build validation of new user
+- Build validation of user login
 
 ### Future plans
 

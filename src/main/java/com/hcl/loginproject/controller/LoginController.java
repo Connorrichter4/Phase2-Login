@@ -24,7 +24,6 @@ public class LoginController {
 
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
 	public String loginUser(Model model, @ModelAttribute("user") UserEntity user) {
-		
 		if (user != null && user.getName() != "" && user.getPassword() != "") {
 			if (service.loginUser(user)) {
 				return "welcome";
