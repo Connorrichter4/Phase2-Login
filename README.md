@@ -2,6 +2,8 @@
 
 ## Project Description
 
+Create a sample login and registration application using JSP-Servlets and hibernate.
+
 ## Requirements
 
 - The source code should be pushed to your GitHub repository. You need to document the steps and write the algorithms in it.
